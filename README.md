@@ -16,9 +16,12 @@
 
   - [Metrics](#metrics)
   - [Benchmark Results](#benchmark-results)
-    - [MOT16](#mot16)
-    - [MOT17](#mot17)
-    - [MOT20](#mot20)
+    - [VOT16](#vot16)
+    - [VOT17](#vot17)
+    - [VOT18](#vot18)
+    - [VOT19](#vot19)
+    - [VOT20](#vot20)
+    - [VOT21](#vot21)
   - [Toolbox](#toolbox)
   - [Course](#course)
 
