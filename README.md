@@ -10,7 +10,7 @@ Related papers will be continuously updated. Please feel free to contact [liz8@m
 BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting students. Looking forward to working with you! [[VIPG-Lab]](https://sustech-vip-lab.github.io/Visual%20Anomaly%20Detection/) [[加入我们]](https://faculty.sustech.edu.cn/?cat=11&tagid=fengzheng&orderby=date&iscss=1&snapid=1) [[Join us]](https://faculty.sustech.edu.cn/?cat=11&tagid=fengzheng&orderby=date&iscss=1&snapid=1&lang=en)
 <!-- TOC -->
   - [Review papers]
-    * **Survey**: Know Your Surroundings: Exploiting Scene Information for Object Tracking. In _arxiv_ 2020. [[Pape]](https://arxiv.org/pdf/2003.11014v1.pdf)
+    * **Survey**: Know Your Surroundings: Exploiting Scene Information for Object Tracking. In _arxiv_ 2020. [[Paper]](https://arxiv.org/pdf/2003.11014v1.pdf)
     ### **Transformer**
     - [**2021**](#2021)
       * **STARK**: Yan, Bin and Peng, Houwen and Fu, Jianlong and Wang, Dong and Lu, Huchuan. Learning Spatio-Temporal Transformer for Visual Tracking. In _ICCV_ 2021.[[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Yan_Learning_Spatio-Temporal_Transformer_for_Visual_Tracking_ICCV_2021_paper.pdf) [[Code]](https://github.com/researchmm/Stark)
