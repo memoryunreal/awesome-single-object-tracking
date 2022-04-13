@@ -843,6 +843,8 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   [[paper](https://arxiv.org/pdf/1612.06615v1.pdf)]
 
     ### **Multi-Modal**
+    
+<!--> RGB Depth<!-->  
     - [**RGB-D**](#RGB-D)
         - [**2021**](#2021)
             * **DeT**: Song Yan, Jinyu Yang, Jani Käpylä, Feng Zheng, Aleš Leonardis, Joni-Kristian Kämäräinen. DepthTrack : Unveiling the Power of RGBD Tracking. In _ICCV_, 2021. [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Yan_DepthTrack_Unveiling_the_Power_of_RGBD_Tracking_ICCV_2021_paper.pdf)
@@ -884,13 +886,12 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
               * **OL3DC**: Bineng Zhong, Yingju Shen, Yan Chen, Weibo Xie, Zhen Cui, Hongbo Zhang, Duansheng Chen ,Tian Wang, Xin Liu, Shujuan Peng, Jin Gou, Jixiang Du, Jing Wang, Wenming Zheng. Online Learning 3D Context for Robust Visual Tracking. In _Neurocomputing_ (151), 2015. [[Paper]](https://www.sciencedirect.com/science/article/pii/S0925231214013757)
          - [**2014**](#2014)
               * **MCBT**: Qi Wang, Jianwu Fang, Yuan Yuan. Multi-Cue Based Tracking. In _Neurocomputing_ (131), 2014. [[Paper]](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.700.8771&rep=rep1&type=pdf)
-
          - [**2013**](#2013)
               * **PT**: Shuran Song, Jianxiong Xiao. Tracking Revisited using RGBD Camera: Unified Benchmark and Baselines. In _ICCV_, 2013. [[Paper]](https://vision.princeton.edu/projects/2013/tracking/paper.pdf) [[Project]](https://tracking.cs.princeton.edu/index.html)
- 
          - [**2012**](#2012)
               * **AMCT**: Germán Martín García, Dominik Alexander Klein, Jörg Stückler, Simone Frintrop, Armin B. Cremers. Adaptive Multi-cue 3D Tracking of Arbitrary Objects. In _JDOS_, 2012. [[Paper]](https://link.springer.com/chapter/10.1007/978-3-642-32717-9_36)
-              
+             
+<!--> RGB Nature Language<!-->   
     - [**RGB-NL**](#RGB-NL)
          - [**2021**](#2021)
               * **TNL2K**: Wang, Xiao and Shu, Xiujun and Zhang, Zhipeng and Jiang, Bo and Wang, Yaowei and Tian, Yonghong and Wu, Feng. Towards More Flexible and Accurate Object Tracking with Natural Language: Algorithms and Benchmark. In _CVPR_ 2021. [[Paper]](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Towards_More_Flexible_and_Accurate_Object_Tracking_With_Natural_Language_CVPR_2021_paper.pdf) [[Project]](https://sites.google.com/view/langtrackbenchmark/)
@@ -901,16 +902,20 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
               * **DAT**: Wang, Xiao, Chenglong Li, Rui Yang, Tianzhu Zhang, Jin Tang, and Bin Luo. Describe and attend to track: Learning natural language guided structural representation and visual attention for object tracking. In _arXiv_ 2018. [[Paper]](https://arxiv.org/pdf/1811.10014.pdf)
          - [**2017**](#2017)
               * **TNLS**: Li, Zhenyang, Ran Tao, Efstratios Gavves, Cees GM Snoek, and Arnold WM Smeulders. "Tracking by natural language specification." In _CVPR_ 2017. [[Paper]](https://openaccess.thecvf.com/content_cvpr_2017/papers/Li_Tracking_by_Natural_CVPR_2017_paper.pdf)
+
+<!--> RGB EVENT<!-->
     - [**RGB-Event**](#RGB-Event)
-         - [**Survey**] 
+         - [**Survey**](#Survey)
               * Gallego, Guillermo, Tobi Delbrück, Garrick Orchard, Chiara Bartolozzi, Brian Taba, Andrea Censi, Stefan Leutenegger et al. Event-based vision: A survey. In _TPAMI_ 2020. [[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9138762)
-         - [**2022**]
-              * **VisEvent**: Wang, Xiao, Jianing Li, Lin Zhu, Zhipeng Zhang, Zhe Chen, Xin Li, Yaowei Wang, Yonghong Tian, and Feng Wu. VisEvent: Reliable Object Tracking via Collaboration of Frame and Event Flows. In _AIII_ 2022. [[Paper]](https://arxiv.org/pdf/2108.05015.pdf) [[Project]](https://sites.google.com/view/viseventtrack/)
+         - [**2022**](#2022)
+              * **VisEvent**: Wang, Xiao, Jianing Li, Lin Zhu, Zhipeng Zhang, Zhe Chen, Xin Li, Yaowei Wang, Yonghong Tian, and Feng Wu. VisEvent: Reliable Object Tracking via Collaboration of Frame and Event Flows. In _AAAI_ 2022. [[Paper]](https://arxiv.org/pdf/2108.05015.pdf) [[Project]](https://sites.google.com/view/viseventtrack/)
          - [**2021**](#2021)
               * **JEFE**: Zhang, Jiqing, Xin Yang, Yingkai Fu, Xiaopeng Wei, Baocai Yin, and Bo Dong. Object Tracking by Jointly Exploiting Frame and Event Domain. In _ICCV_ 2021. [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Zhang_Object_Tracking_by_Jointly_Exploiting_Frame_and_Event_Domain_ICCV_2021_paper.pdf)
+              
+<!--> RGB Thermal<!-->   
     - [**RGB-T**](#RGB-T)
          - [**2022**](#2022)
-            * **VTUAV**: Pengyu Zhang, Jie Zhao, Dong Wang, Huchuan Lu, Xiang Ruan. Visible-Thermal UAV Tracking: A Large-Scale Benchmark and New Baseline", In _CVPR_ 2022. [[Paper]](https://arxiv.org/abs/2204.04120) [[Project]] (https://zhang-pengyu.github.io/DUT-VTUAV/)
+            * **VTUAV**: Pengyu Zhang, Jie Zhao, Dong Wang, Huchuan Lu, Xiang Ruan. Visible-Thermal UAV Tracking: A Large-Scale Benchmark and New Baseline", In _CVPR_ 2022. [[Paper]](https://arxiv.org/abs/2204.04120) [[Project]](https://zhang-pengyu.github.io/DUT-VTUAV/)
          - [**2021**](#2021)
             * **CBPNet**: Qin Xu, Yiming Mei, Jinpei Liu, Chenglong Li. Multimodal Cross-Layer Bilinear Pooling for RGBT Tracking", In _TMM_ 2021. [[Paper]](https://ieeexplore.ieee.org/abstract/document/9340007?casa_token=2J66RsN_jAQAAAAA:f6O-OSYp3Hwco_zzTP7175Oq35qaFNRvgX29LqMfjfO7Ya4vAHCCkuNJabgtoOusYTaH89kB)
 
