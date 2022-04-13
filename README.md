@@ -909,7 +909,8 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
          - [**2021**](#2021)
               * **JEFE**: Zhang, Jiqing, Xin Yang, Yingkai Fu, Xiaopeng Wei, Baocai Yin, and Bo Dong. Object Tracking by Jointly Exploiting Frame and Event Domain. In _ICCV_ 2021. [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Zhang_Object_Tracking_by_Jointly_Exploiting_Frame_and_Event_Domain_ICCV_2021_paper.pdf)
     - [**RGB-T**](#RGB-T)
-
+         - [**2022**](#2022)
+            * **VTUAV**: Pengyu Zhang, Jie Zhao, Dong Wang, Huchuan Lu, Xiang Ruan. Visible-Thermal UAV Tracking: A Large-Scale Benchmark and New Baseline", In _CVPR_ 2022. [[Paper]](https://arxiv.org/abs/2204.04120) [[Project]] (https://zhang-pengyu.github.io/DUT-VTUAV/)
          - [**2021**](#2021)
             * **CBPNet**: Qin Xu, Yiming Mei, Jinpei Liu, Chenglong Li. Multimodal Cross-Layer Bilinear Pooling for RGBT Tracking", In _TMM_ 2021. [[Paper]](https://ieeexplore.ieee.org/abstract/document/9340007?casa_token=2J66RsN_jAQAAAAA:f6O-OSYp3Hwco_zzTP7175Oq35qaFNRvgX29LqMfjfO7Ya4vAHCCkuNJabgtoOusYTaH89kB)
 
