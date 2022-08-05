@@ -1,7 +1,12 @@
 <!-- # Awesome-single-object-tracking
 
 <!-- # Awesome Object Pose Estimation and Reconstruction [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) !-->
-
+<!-- [![Maintenance](https://img.shields.io/badge/Maintained%3F-YES-green.svg)](https://github.com/memoryunreal/awesome-single-object-tracking/graphs/commit-activity)
+![ ](https://img.shields.io/github/last-commit/memoryunreal/awesome-single-object-tracking)
+[![GitHub stars](https://img.shields.io/github/stars/MinghuiChen43/awesome-trustworthy-deep-learning?color=blue&style=plastic)](https://github.com/MinghuiChen43/awesome-trustworthy-deep-learning/stargazers)
+[![GitHub watchers](https://img.shields.io/github/watchers/MinghuiChen43/awesome-trustworthy-deep-learning?color=yellow&style=plastic)](https://github.com/MinghuiChen43/awesome-trustworthy-deep-learning)
+[![GitHub forks](https://img.shields.io/github/forks/MinghuiChen43/awesome-trustworthy-deep-learning?color=red&style=plastic)](https://github.com/MinghuiChen43/awesome-trustworthy-deep-learning/watchers)
+[![GitHub Contributors](https://img.shields.io/github/contributors/MinghuiChen43/awesome-trustworthy-deep-learning?color=green&style=plastic)](https://github.com/MinghuiChen43/awesome-trustworthy-deep-learning/network/members) -->
 <a id="markdown-contents" name="contents"></a>
 
 # Contents
@@ -12,7 +17,20 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   - [Review papers]
     * **Survey**: Know Your Surroundings: Exploiting Scene Information for Object Tracking. In _arxiv_ 2020. [[Paper]](https://arxiv.org/pdf/2003.11014v1.pdf)
     ### **Transformer**
+    - [**2022**](#2022)
+      - Joint Feature Learning and Relation Modeling for Tracking: A One-Stream Framework. [[paper]](https://arxiv.org/abs/2203.11991) [[code]](https://github.com/botaoye/ostrack)
+        - Botao Ye, Hong Chang, Bingpeng Ma, Shiguang Shan. *ECCV 2022*
+        - Keyword: One-stream; Target-background Discriminability;
+        - <details><summary>Digest</summary> The current popular two-stream, two-stage tracking framework extracts the template and the search region features separately and then performs relation modeling, thus the extracted features lack the awareness of the target and have limited target-background discriminability. To tackle the above issue, we propose a novel one-stream tracking (OSTrack) framework that unifies feature learning and relation modeling by bridging the template-search image pairs with bidirectional information flows. In this way, discriminative target-oriented features can be dynamically extracted by mutual guidance. Since no extra heavy relation modeling module is needed and the implementation is highly parallelized, the proposed tracker runs at a fast speed. To further improve the inference efficiency, an in-network candidate early elimination module is proposed based on the strong similarity prior calculated in the one-stream framework. As a unified framework, OSTrack achieves state-of-the-art performance on multiple benchmarks, in particular, it shows impressive results on the one-shot tracking benchmark GOT-10k, i.e., achieving 73.7% AO, improving the existing best result (SwinTrack) by 4.3%. Besides, our method maintains a good performance-speed trade-off and shows faster convergence.
+        - <img width="85%" src="https://github.com/memoryunreal/awesome-single-object-tracking/Figure/OSTrack.png" alt="Framework"/>
+
+      - MixFormer: End-to-End Tracking with Iterative Mixed Attention. [[paper]](https://arxiv.org/abs/2203.11082) [[code]](https://github.com/MCG-NJU/MixFormer)
+        - Yutao Cui, Cheng Jiang, Limin Wang, Gangshan Wu. *CVPR 2022 Oral*
+        - Keyword: Transformer; Mixed Attention Module.
+        - <details><summary>Digest</summary> To simplify the tracking pipeline and unify the process of feature extraction and target information integration, we present a compact tracking framework, termed as MixFormer, built upon transformers. Our core design is to utilize the flexibility of attention operations, and propose a Mixed Attention Module (MAM) for simultaneous feature extraction and target information integration. This synchronous modeling scheme allows to extract target-specific discriminative features and perform extensive communication between target and search area. Based on MAM, we build our MixFormer tracking framework simply by stacking multiple MAMs with progressive patch embedding and placing a localization head on top. In addition, to handle multiple target templates during online tracking, we devise an asymmetric attention scheme in MAM to reduce computational cost, and propose an effective score prediction module to select high-quality templates. Our MixFormer sets a new state-of-the-art performance on five tracking benchmarks, including LaSOT, TrackingNet, VOT2020, GOT-10k, and UAV123. In particular, our MixFormer-L achieves NP score of 79.9% on LaSOT, 88.9% on TrackingNet and EAO of 0.555 on VOT2020. We also perform in-depth ablation studies to demonstrate the effectiveness of simultaneous feature extraction and information integration.
+
     - [**2021**](#2021)
+
       * **STARK**: Yan, Bin and Peng, Houwen and Fu, Jianlong and Wang, Dong and Lu, Huchuan. Learning Spatio-Temporal Transformer for Visual Tracking. In _ICCV_ 2021.[[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Yan_Learning_Spatio-Temporal_Transformer_for_Visual_Tracking_ICCV_2021_paper.pdf) [[Code]](https://github.com/researchmm/Stark)
       * **Transformer Tracking**: Chen, Xin and Yan, Bin and Zhu, Jiawen and Wang, Dong and Yang, Xiaoyun and Lu, Huchuan. Transformer Tracking. In _CVPR_ 2021.[[Paper]](https://openaccess.thecvf.com/content/CVPR2021/papers/Chen_Transformer_Tracking_CVPR_2021_paper.pdf) [[Code]](https://github.com/chenxin-dlut/TransT)
       * **Transformer Meets Tracker**: Wang, Ning and Zhou, Wengang and Wang, Jie and Li, Houqiang. Transformer Meets Tracker: Exploiting Temporal Context for Robust Visual Tracking. In _CVPR_ 2021. [[Paper]](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Transformer_Meets_Tracker_Exploiting_Temporal_Context_for_Robust_Visual_Tracking_CVPR_2021_paper.pdf) [[Code]](https://github.com/594422814/TransformerTrack)
