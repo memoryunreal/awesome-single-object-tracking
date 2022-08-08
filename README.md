@@ -18,9 +18,27 @@ Review papers
   * **Survey**: Know Your Surroundings: Exploiting Scene Information for Object Tracking. In _arxiv_ 2020. [[Paper]](https://arxiv.org/abs/2003.11014)
   ### **RGB Tracking**
   - [**2022**](#2022)
+    - Local Perception-Aware Transformer for Aerial Tracking. [[paper]](https://arxiv.org/abs/2208.00662) [[code]](https://github.com/vision4robotics/lpat)
+      - Changhong Fu, Weiyu Peng, Sihang Li, Junjie Ye, Ziang Cao.
+      - Keyword: Aerial Tracking; UAV Tracking; Single Object Tracking; Transformer.
+      - <details><summary>Digest</summary> However, the Transformer structure is lack of enough inductive bias. In addition, only focusing on encoding the global feature does harm to modeling local details, which restricts the capability of tracking in aerial robots. Specifically, with local-modeling to global-search mechanism, the proposed tracker replaces the global encoder by a novel local-recognition encoder. In the employed encoder, a local-recognition attention and a local element correction network are carefully designed for reducing the global redundant information interference and increasing local inductive bias. Meanwhile, the latter can model local object details precisely under aerial view through detail-inquiry net.
+      - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/LPAT_tracking.png" alt="Framework"/> 
+
+    - AiATrack: Attention in Attention for Transformer Visual Tracking. [[paper]](https://arxiv.org/abs/2207.09603) [[code]](https://github.com/Little-Podi/AiATrack)
+      - Shenyuan Gao, Chunluan Zhou, Chao Ma, Xinggang Wang, Junsong Yuan. *ECCV 2022*
+      - Keyword: Single Object Tracking; Transformer; Atention in Atention.
+      - <details><summary>Digest</summary> The independent correlation computation in the attention mechanism could result in noisy and ambiguous attention weights, which inhibits further performance improvement. To address this issue, we propose an attention in attention (AiA) module, which enhances appropriate correlations and suppresses erroneous ones by seeking consensus among all correlation vectors. Our AiA module can be readily applied to both self-attention blocks and cross-attention blocks to facilitate feature aggregation and information propagation for visual tracking. Moreover, we propose a streamlined Transformer tracking framework, dubbed AiATrack, by introducing efficient feature reuse and target-background embeddings to make full use of temporal references.
+      - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/AiATrack.png" alt="Framework"/> 
+
+    - Towards Grand Unification of Object Tracking. [[paper]](https://arxiv.org/abs/2207.07078) [[code]](https://github.com/masterbin-iiau/unicorn)
+      - Bin Yan, Yi Jiang, Peize Sun, Dong Wang, Zehuan Yuan, Ping Luo, Huchuan Lu. *ECCV 2022 Oral*
+      - Keyword: Grand Unification; Object Tracking; Object Segmentation.
+      - <details><summary>Digest</summary> We present a unified method, termed Unicorn, that can simultaneously solve four tracking problems (SOT, MOT, VOS, MOTS) with a single network using the same model parameters. Due to the fragmented definitions of the object tracking problem itself, most existing trackers are developed to address a single or part of tasks and overspecialize on the characteristics of specific tasks. By contrast, Unicorn provides a unified solution, adopting the same input, backbone, embedding, and head across all tracking tasks. For the first time, we accomplish the great unification of the tracking network architecture and learning paradigm.
+      - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/Unicorn_tracking.png" alt="Framework"/> 
+
     - Joint Feature Learning and Relation Modeling for Tracking: A One-Stream Framework. [[paper]](https://arxiv.org/abs/2203.11991) [[code]](https://github.com/botaoye/ostrack)
       - Botao Ye, Hong Chang, Bingpeng Ma, Shiguang Shan. *ECCV 2022*
-      - Keyword: One-stream; Target-background Discriminability;
+      - Keyword: One-stream; Target-background Discriminability.
       - <details><summary>Digest</summary> The current popular two-stream, two-stage tracking framework extracts the template and the search region features separately and then performs relation modeling, thus the extracted features lack the awareness of the target and have limited target-background discriminability. We propose a novel one-stream tracking (OSTrack) framework that unifies feature learning and relation modeling by bridging the template-search image pairs with bidirectional information flows. In this way, discriminative target-oriented features can be dynamically extracted by mutual guidance. Since no extra heavy relation modeling module is needed and the implementation is highly parallelized, the proposed tracker runs at a fast speed. To further improve the inference efficiency, an in-network candidate early elimination module is proposed based on the strong similarity prior calculated in the one-stream framework.
       - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/OSTrack.png" alt="Framework"/> 
 
