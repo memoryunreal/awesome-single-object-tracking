@@ -40,7 +40,7 @@ Review papers
       - Zikai Song, Junqing Yu, Yi-Ping Phoebe Chen, Wei Yang. *CVPR 2022*
       - Keyword: Pixel-to-pixel Attention; Visual Object Tracking; Transformer.
       - <details><summary>Digest</summary> Existing transformer-based approaches adopt the pixel-to-pixel attention strategy on flattened image features and unavoidably ignore the integrity of objects. In this paper, we propose a new transformer architecture with multi-scale cyclic shifting window attention for visual object tracking, elevating the attention from pixel to window level. The cross-window multi-scale attention has the advantage of aggregating attention at different scales and generates the best fine-scale match for the target object. Furthermore, the cyclic shifting strategy brings greater accuracy by expanding the window samples with positional information, and at the same time saves huge amounts of computational power by removing redundant calculations.
-      - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/Unicorn_tracking.png" alt="Framework"/> 
+      - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/CSwinTT.png" alt="Framework"/> 
 
     - SparseTT: Visual Tracking with Sparse Transformers. [[paper]](https://arxiv.org/abs/2205.03776) [[code]](https://github.com/fzh0917/sparsett)
       - Zhihong Fu, Zehua Fu, Qingjie Liu, Wenrui Cai, Yunhong Wang. *IJCAI 2022*
