@@ -36,6 +36,18 @@ Review papers
       - <details><summary>Digest</summary> We present a unified method, termed Unicorn, that can simultaneously solve four tracking problems (SOT, MOT, VOS, MOTS) with a single network using the same model parameters. Due to the fragmented definitions of the object tracking problem itself, most existing trackers are developed to address a single or part of tasks and overspecialize on the characteristics of specific tasks. By contrast, Unicorn provides a unified solution, adopting the same input, backbone, embedding, and head across all tracking tasks. For the first time, we accomplish the great unification of the tracking network architecture and learning paradigm.
       - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/Unicorn_tracking.png" alt="Framework"/> 
 
+    - Transformer Tracking with Cyclic Shifting Window Attention. [[paper]](https://arxiv.org/abs/2205.03806) [[code]](https://github.com/skyesong38/cswintt)
+      - Zikai Song, Junqing Yu, Yi-Ping Phoebe Chen, Wei Yang. *CVPR 2022*
+      - Keyword: Pixel-to-pixel Attention; Visual Object Tracking; Transformer.
+      - <details><summary>Digest</summary> Existing transformer-based approaches adopt the pixel-to-pixel attention strategy on flattened image features and unavoidably ignore the integrity of objects. In this paper, we propose a new transformer architecture with multi-scale cyclic shifting window attention for visual object tracking, elevating the attention from pixel to window level. The cross-window multi-scale attention has the advantage of aggregating attention at different scales and generates the best fine-scale match for the target object. Furthermore, the cyclic shifting strategy brings greater accuracy by expanding the window samples with positional information, and at the same time saves huge amounts of computational power by removing redundant calculations.
+      - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/Unicorn_tracking.png" alt="Framework"/> 
+
+    - SparseTT: Visual Tracking with Sparse Transformers. [[paper]](https://arxiv.org/abs/2205.03776) [[code]](https://github.com/fzh0917/sparsett)
+      - Zhihong Fu, Zehua Fu, Qingjie Liu, Wenrui Cai, Yunhong Wang. *IJCAI 2022*
+      - Keyword: Sparse Attention; Transfomer.
+      - <details><summary>Digest</summary> Self-attention lacks focusing on the most relevant information in the search regions, making it easy to be distracted by background. In this paper, we relieve this issue with a sparse attention mechanism by focusing the most relevant information in the search regions, which enables a much accurate tracking. Furthermore, we introduce a double-head predictor to boost the accuracy of foreground-background classification and regression of target bounding boxes, which further improve the tracking performance.
+      - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SparseTT.png" alt="Framework"/> 
+
     - Joint Feature Learning and Relation Modeling for Tracking: A One-Stream Framework. [[paper]](https://arxiv.org/abs/2203.11991) [[code]](https://github.com/botaoye/ostrack)
       - Botao Ye, Hong Chang, Bingpeng Ma, Shiguang Shan. *ECCV 2022*
       - Keyword: One-stream; Target-background Discriminability.
