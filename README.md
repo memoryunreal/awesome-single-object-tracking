@@ -18,7 +18,8 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
 
 - [Awesome Single Object Tracking:](#awesome-single-object-tracking)
   - [Review](#review-papers)
-  - [Visual Object Tracking](#visual-object-tracking)
+  - [RGB Tracking](#rgb-tracking)
+  - [Point Clouds Tracking](#point-clouds-tracking)
 
 <!-- - [Related Awesome Lists:astonished:](#related-awesome-lists)
 - [Toolboxes:toolbox:](#toolboxes)
@@ -32,7 +33,7 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   * **Survey**: Know Your Surroundings: Exploiting Scene Information for Object Tracking. In _arxiv_ 2020. [[Paper]](https://arxiv.org/abs/2003.11014)
 
 
-## **Visual Object Tracking**
+## **RGB Tracking**
 ### RGB Tracking 2022
   
 - Local Perception-Aware Transformer for Aerial Tracking. [[paper]](https://arxiv.org/abs/2208.00662) [[code]](https://github.com/vision4robotics/lpat)
@@ -114,6 +115,34 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   - <details><summary>Digest</summary> In this work, we bridge the individual video frames and explore the temporal contexts across them via a transformer architecture for robust object tracking. Different from classic usage of the transformer in natural language processing tasks, we separate its encoder and decoder into two parallel branches and carefully design them within the Siamese-like tracking pipelines. The transformer encoder promotes the target templates via attention-based feature reinforcement, which benefits the high-quality tracking model generation. The transformer decoder propagates the tracking cues from previous templates to the current frame, which facilitates the object searching process. Our transformer-assisted tracking framework is neat and trained in an end-to-end manner. With the proposed transformer, a simple Siamese matching approach is able to outperform the current top-performing trackers.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/TransformerMeetsTracker.png" alt="Framework"/> 
 
+## **Point Clouds Tracking**
+### Point Clouds Tracking 2022
+- 3D Siamese Transformer Network for Single Object Tracking on Point Clouds. [[paper]](https://arxiv.org/abs/2207.11995) [[code]](https://github.com/fpthink/STNet)
+  - Le Hui, Lingpeng Wang, Linghua Tang, Kaihao Lan, Jin Xie, Jian Yang. *ECCV 2022*
+  - Keyword: 3D SOT; Point Clouds; Siamese-like; Transformer.
+  - <details><summary>Digest</summary> In this paper, we explicitly use Transformer to form a 3D Siamese Transformer network for learning robust cross correlation between the template and the search area of point clouds. Specifically, we develop a Siamese point Transformer network to learn shape context information of the target. Its encoder uses self-attention to capture non-local information of point clouds to characterize the shape information of the object, and the decoder utilizes cross-attention to upsample discriminative point features. After that, we develop an iterative coarse-to-fine correlation network to learn the robust cross correlation between the template and the search area. It formulates the cross-feature augmentation to associate the template with the potential target in the search area via cross attention.
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/STNet.png" alt="Framework"/> 
+
+### Point Clouds Tracking 2021
+- Box-Aware Feature Enhancement for Single Object Tracking on Point Clouds. [[paper]](https://arxiv.org/abs/2108.04728) [[code]](https://github.com/ghostish/open3dsot)
+  - Chaoda Zheng, Xu Yan, Jiantao Gao, Weibing Zhao, Wei Zhang, Zhen Li, Shuguang Cui. *ICCV 2021*
+  - Keyword: 3D SOT; Point Clouds; Box-aware Feature Enhancement.
+  - <details><summary>Digest</summary> Due to the common occlusion in LiDAR scans, it is non-trivial to conduct accurate feature comparisons on severe sparse and incomplete shapes. In this work, we exploit the ground truth bounding box given in the first frame as a strong cue to enhance the feature description of the target object, enabling a more accurate feature comparison in a simple yet effective way. In particular, we first propose the BoxCloud, an informative and robust representation, to depict an object using the point-to-box relation. We further design an efficient box-aware feature fusion module, which leverages the aforementioned BoxCloud for reliable feature matching and embedding. Integrating the proposed general components into an existing model P2B, we construct a superior box-aware tracker (BAT).
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/BAT.png" alt="Framework"/> 
+
+### Point Clouds Tracking 2020
+- P2B: Point-to-Box Network for 3D Object Tracking in Point Clouds. [[paper]](https://arxiv.org/abs/2005.13888) [[code]](https://github.com/HaozheQi/P2B)
+  - Haozhe Qi, Chen Feng, Zhiguo Cao, Feng Zhao, Yang Xiao. *CVPR 2020 Oral*
+  - Keyword: 3D SOT; Point Clouds; Point-to-box.
+  - <details><summary>Digest</summary> A novel point-to-box network termed P2B is proposed in an end-to-end learning manner. Our main idea is to first localize potential target centers in 3D search area embedded with target information. Then point-driven 3D target proposal and verification are executed jointly. In this way, the time-consuming 3D exhaustive search can be avoided. Specifically, we first sample seeds from the point clouds in template and search area respectively. Then, we execute permutation-invariant feature augmentation to embed target clues from template into search area seeds and represent them with target-specific features. Consequently, the augmented search area seeds regress the potential target centers via Hough voting. The centers are further strengthened with seed-wise targetness scores. Finally, each center clusters its neighbors to leverage the ensemble power for joint 3D target proposal and verification.
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/P2B.png" alt="Framework"/> 
+
+### Point Clouds Tracking 2019
+- Leveraging Shape Completion for 3D Siamese Tracking. [[paper]](https://arxiv.org/abs/1903.01784) [[code]](https://github.com/SilvioGiancola/ShapeCompletion3DTracking)
+  - Silvio Giancola, Jesus Zarzar, Bernard Ghanem. *CVPR 2019*
+  - Keyword: 3D SOT; Point Clouds; Shape Completion; Siamese-like.
+  - <details><summary>Digest</summary> In this paper, we investigate the versatility of Shape Completion for 3D Object Tracking in LIDAR point clouds. We design a Siamese tracker that encodes model and candidate shapes into a compact latent representation. We regularize the encoding by enforcing the latent representation to decode into an object model shape. We observe that 3D object tracking and 3D shape completion complement each other. Learning a more meaningful latent representation shows better discriminatory capabilities, leading to improved tracking performance.
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SC3D.png" alt="Framework"/> 
 
 
   ### **Siamese**
@@ -131,13 +160,7 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   - [**2016**](#2016)
     * **SiamFC**: Bertinetto, Luca, Jack Valmadre, Joao F. Henriques, Andrea Vedaldi, and Philip HS Torr. Fully-convolutional siamese networks for object tracking. In _ECCV_ 2016. [[Paper]](https://arxiv.org/pdf/1606.09549.pdf) [[Project]](https://www.robots.ox.ac.uk/~luca/siamese-fc.html)
     
-  ### **Point Tracking**
-  - [**2021**](#2021)
-    * Zheng, Chaoda and Yan, Xu and Gao, Jiantao and Zhao, Weibing and Zhang, Wei and Li, Zhen and Cui, Shuguang. Box-Aware Feature Enhancement for Single Object Tracking on Point Clouds. In _ICCV_ 2021. [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Zheng_Box-Aware_Feature_Enhancement_for_Single_Object_Tracking_on_Point_Clouds_ICCV_2021_paper.pdf) [[Code]](https://github.com/Ghostish/BAT)
-  - [**2020**](#2020)
-    * Qi, Haozhe, Chen Feng, Zhiguo Cao, Feng Zhao, and Yang Xiao. P2B: Point-to-box network for 3D object tracking in point clouds. In _CVPR_ 2020. [[Paper]](https://openaccess.thecvf.com/content_CVPR_2020/papers/Qi_P2B_Point-to-Box_Network_for_3D_Object_Tracking_in_Point_Clouds_CVPR_2020_paper.pdf) [[Code]](https://github.com/HaozheQi/P2B)
-  - [**2019**](#2019)
-    * Giancola, Silvio, Jesus Zarzar, and Bernard Ghanem. Leveraging shape completion for 3d siamese tracking. In _CVPR_ 2019. [[Paper]](https://openaccess.thecvf.com/content_CVPR_2019/papers/Giancola_Leveraging_Shape_Completion_for_3D_Siamese_Tracking_CVPR_2019_paper.pdf) [[Code]](https://github.com/SilvioGiancola/ShapeCompletion3DTracking)
+
     ## **RGB Paper**
     ### CVPR2020
 
