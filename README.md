@@ -66,6 +66,12 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   - <details><summary>Digest</summary> Self-attention lacks focusing on the most relevant information in the search regions, making it easy to be distracted by background. In this paper, we relieve this issue with a sparse attention mechanism by focusing the most relevant information in the search regions, which enables a much accurate tracking. Furthermore, we introduce a double-head predictor to boost the accuracy of foreground-background classification and regression of target bounding boxes, which further improve the tracking performance.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SparseTT.png" alt="Framework"/> 
 
+- Efficient Visual Tracking via Hierarchical Cross-Attention Transformer. [[paper]](https://arxiv.org/abs/2203.13537) [[code]](https://github.com/chenxin-dlut/hcat)
+  - Xin Chen, Dong Wang, Dongdong Li, Huchuan Lu.
+  - Keyword: Efficiency; Transfomer; UAV Tracking.
+  - <details><summary>Digest</summary> This development is mainly attributed to powerful networks (such as transformers) and additional modules (such as online update and refinement modules). However, less attention has been paid to tracking speed. Most state-of-the-art trackers are satisfied with the real-time speed on powerful GPUs. However, practical applications necessitate higher requirements for tracking speed, especially when edge platforms with limited resources are used. In this work, we present an efficient tracking method via a hierarchical cross-attention transformer named HCAT. Our model runs about 195 fps on GPU, 45 fps on CPU, and 55 fps on the edge AI platform of NVidia Jetson AGX Xavier.
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/hierarchical_transformer_tracking.png" alt="Framework"/> 
+
 - Joint Feature Learning and Relation Modeling for Tracking: A One-Stream Framework. [[paper]](https://arxiv.org/abs/2203.11991) [[code]](https://github.com/botaoye/ostrack)
   - Botao Ye, Hong Chang, Bingpeng Ma, Shiguang Shan. *ECCV 2022*
   - Keyword: One-stream; Target-background Discriminability.
