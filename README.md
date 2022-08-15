@@ -35,7 +35,13 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
 
 ## **RGB Tracking**
 ### RGB Tracking 2022
-  
+
+- Towards Sequence-Level Training for Visual Tracking. [[paper]](https://arxiv.org/abs/2208.05810) [[code]](https://github.com/byminji/SLTtrack)
+  - Minji Kim, Seungkwan Lee, Jungseul Ok, Bohyung Han, Minsu Cho. *ECCV 2022*
+  - Keyword: Aerial Tracking; UAV Tracking; Single Object Tracking; Transformer.
+  - <details><summary>Digest</summary> Despite the extensive adoption of machine learning on the task of visual object tracking, recent learning-based approaches have largely overlooked the fact that visual tracking is a sequence-level task in its nature; they rely heavily on frame-level training, which inevitably induces inconsistency between training and testing in terms of both data distributions and task objectives. This work introduces a sequence-level training strategy for visual tracking based on reinforcement learning and discusses how a sequence-level design of data sampling, learning objectives, and data augmentation can improve the accuracy and robustness of tracking algorithms.
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SLTrack_train.png" alt="Framework"/>  
+
 - Local Perception-Aware Transformer for Aerial Tracking. [[paper]](https://arxiv.org/abs/2208.00662) [[code]](https://github.com/vision4robotics/lpat)
   - Changhong Fu, Weiyu Peng, Sihang Li, Junjie Ye, Ziang Cao.
   - Keyword: Aerial Tracking; UAV Tracking; Single Object Tracking; Transformer.
