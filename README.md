@@ -37,128 +37,128 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
 ### RGB Tracking 2022
 
 - Learning Spatial-Frequency Transformer for Visual Object Tracking. [[paper]](https://arxiv.org/abs/2208.08829) [[code]](https://github.com/tchuanm/sftranst)
-  - Chuanming Tang, Xiao Wang, Yuanchao Bai, Zhe Wu, Jianlin Zhang, Yongmei Huang.
+  - Chuanming Tang, Xiao Wang, Yuanchao Bai, Zhe Wu, Jianlin Zhang, Yongmei Huang. `Arxiv 2022/08`
   - Keyword: Gaussian Spatial Prior; High-frequency Emphasis Attention; Transformer; Siamese-like.
   - <details><summary>Digest</summary> We propose a unified Spatial-Frequency Transformer that models the Gaussian spatial Prior and High-frequency emphasis Attention (GPHA) simultaneously. To be specific, Gaussian spatial prior is generated using dual Multi-Layer Perceptrons (MLPs) and injected into the similarity matrix produced by multiplying Query and Key features in self-attention. The output will be fed into a Softmax layer and then decomposed into two components, i.e., the direct signal and high-frequency signal. The low- and high-pass branches are rescaled and combined to achieve all-pass, therefore, the high-frequency features will be protected well in stacked self-attention layers. We further integrate the Spatial-Frequency Transformer into the Siamese tracking framework and propose a novel tracking algorithm, termed SFTransT. The cross-scale fusion based SwinTransformer is adopted as the backbone, and also a multi-head cross-attention module is used to boost the interaction between search and template features. The output will be fed into the tracking head for target localization. 
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SFTransT.png" alt="Framework"/>  
 
 - AVisT: A Benchmark for Visual Object Tracking in Adverse Visibility. [[paper]](https://arxiv.org/abs/2208.06888) [[code]](https://github.com/visionml/pytracking)
-  - Mubashir Noman, Wafa Al Ghallabi, Daniya Najiha, Christoph Mayer, Akshay Dudhane, Martin Danelljan, Hisham Cholakkal, Salman Khan, Luc Van Gool, Fahad Shahbaz Khan.
+  - Mubashir Noman, Wafa Al Ghallabi, Daniya Najiha, Christoph Mayer, Akshay Dudhane, Martin Danelljan, Hisham Cholakkal, Salman Khan, Luc Van Gool, Fahad Shahbaz Khan. `Arxiv 2022/08`
   - Keyword: Benchmark; Adverse Visbility; Severe Weather Conditions; Adverse Imaging Effects.
   - <details><summary>Digest</summary> We introduce AVisT, a dedicated benchmark for visual tracking in diverse scenarios with adverse visibility. AVisT comprises 120 challenging sequences with 80k annotated frames, spanning 18 diverse scenarios broadly grouped into five attributes with 42 object categories. The key contribution of AVisT is diverse and challenging scenarios covering severe weather conditions such as, dense fog, heavy rain and sandstorm; obstruction effects including, fire, sun glare and splashing water; adverse imaging effects such as, low-light; target effects including, small targets and distractor objects along with camouflage. We further benchmark 17 popular and recent trackers on AVisT with detailed analysis of their tracking performance across attributes, demonstrating a big room for improvement in performance.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/AVisT.png" alt="Framework"/>  
 
 - HighlightNet: Highlighting Low-Light Potential Features for Real-Time UAV Tracking. [[paper]](https://arxiv.org/abs/2208.06818) [[code]](https://github.com/vision4robotics/highlightnet)
   - Changhong Fu, Haolin Dong, Junjie Ye, Guangze Zheng, Sihang Li, Jilin Zhao.
-  - Keyword: UAV Tracking; Low-light Environment; Transformer. *IROS 2022*
+  - Keyword: UAV Tracking; Low-light Environment; Transformer. `IROS 2022`
   - <details><summary>Digest</summary> Low-light environments have posed a formidable challenge for robust unmanned aerial vehicle (UAV) tracking even with state-of-the-art (SOTA) trackers since the potential image features are hard to extract under adverse light conditions. Besides, due to the low visibility, accurate online selection of the object also becomes extremely difficult for human monitors to initialize UAV tracking in ground control stations. To solve these problems, this work proposes a novel enhancer, i.e., HighlightNet, to light up potential objects for both human operators and UAV trackers. By employing Transformer, HighlightNet can adjust enhancement parameters according to global features and is thus adaptive for the illumination variation. Pixel-level range mask is introduced to make HighlightNet more focused on the enhancement of the tracking object and regions without light sources. Furthermore, a soft truncation mechanism is built to prevent background noise from being mistaken for crucial features. Evaluations on image enhancement benchmarks demonstrate HighlightNet has advantages in facilitating human perception.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/HighlighNet.png" alt="Framework"/>  
 
 - Towards Sequence-Level Training for Visual Tracking. [[paper]](https://arxiv.org/abs/2208.05810) [[code]](https://github.com/byminji/SLTtrack)
-  - Minji Kim, Seungkwan Lee, Jungseul Ok, Bohyung Han, Minsu Cho. *ECCV 2022*
+  - Minji Kim, Seungkwan Lee, Jungseul Ok, Bohyung Han, Minsu Cho. `ECCV 2022`
   - Keyword: Aerial Tracking; UAV Tracking; Single Object Tracking; Transformer.
   - <details><summary>Digest</summary> Despite the extensive adoption of machine learning on the task of visual object tracking, recent learning-based approaches have largely overlooked the fact that visual tracking is a sequence-level task in its nature; they rely heavily on frame-level training, which inevitably induces inconsistency between training and testing in terms of both data distributions and task objectives. This work introduces a sequence-level training strategy for visual tracking based on reinforcement learning and discusses how a sequence-level design of data sampling, learning objectives, and data augmentation can improve the accuracy and robustness of tracking algorithms.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SLTrack_train.png" alt="Framework"/>  
 
 - Local Perception-Aware Transformer for Aerial Tracking. [[paper]](https://arxiv.org/abs/2208.00662) [[code]](https://github.com/vision4robotics/lpat)
-  - Changhong Fu, Weiyu Peng, Sihang Li, Junjie Ye, Ziang Cao.
-  - Keyword: Aerial Tracking; UAV Tracking; Single Object Tracking; Transformer.
+  - Changhong Fu, Weiyu Peng, Sihang Li, Junjie Ye, Ziang Cao. `Arxiv 2022/08`
+  - Keyword: Aerial Tracking; UAV Tracking; Single Object Tracking; Transformer. 
   - <details><summary>Digest</summary> However, the Transformer structure is lack of enough inductive bias. In addition, only focusing on encoding the global feature does harm to modeling local details, which restricts the capability of tracking in aerial robots. Specifically, with local-modeling to global-search mechanism, the proposed tracker replaces the global encoder by a novel local-recognition encoder. In the employed encoder, a local-recognition attention and a local element correction network are carefully designed for reducing the global redundant information interference and increasing local inductive bias. Meanwhile, the latter can model local object details precisely under aerial view through detail-inquiry net.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/LPAT_tracking.png" alt="Framework"/> 
 
 - AiATrack: Attention in Attention for Transformer Visual Tracking. [[paper]](https://arxiv.org/abs/2207.09603) [[code]](https://github.com/Little-Podi/AiATrack)
-  - Shenyuan Gao, Chunluan Zhou, Chao Ma, Xinggang Wang, Junsong Yuan. *ECCV 2022*
+  - Shenyuan Gao, Chunluan Zhou, Chao Ma, Xinggang Wang, Junsong Yuan. `ECCV 2022`
   - Keyword: Single Object Tracking; Transformer; Atention in Atention.
   - <details><summary>Digest</summary> The independent correlation computation in the attention mechanism could result in noisy and ambiguous attention weights, which inhibits further performance improvement. To address this issue, we propose an attention in attention (AiA) module, which enhances appropriate correlations and suppresses erroneous ones by seeking consensus among all correlation vectors. Our AiA module can be readily applied to both self-attention blocks and cross-attention blocks to facilitate feature aggregation and information propagation for visual tracking. Moreover, we propose a streamlined Transformer tracking framework, dubbed AiATrack, by introducing efficient feature reuse and target-background embeddings to make full use of temporal references.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/AiATrack.png" alt="Framework"/> 
 
 - Towards Grand Unification of Object Tracking. [[paper]](https://arxiv.org/abs/2207.07078) [[code]](https://github.com/masterbin-iiau/unicorn)
-  - Bin Yan, Yi Jiang, Peize Sun, Dong Wang, Zehuan Yuan, Ping Luo, Huchuan Lu. *ECCV 2022 Oral*
+  - Bin Yan, Yi Jiang, Peize Sun, Dong Wang, Zehuan Yuan, Ping Luo, Huchuan Lu. `ECCV 2022 Oral`
   - Keyword: Grand Unification; Object Tracking; Object Segmentation.
   - <details><summary>Digest</summary> We present a unified method, termed Unicorn, that can simultaneously solve four tracking problems (SOT, MOT, VOS, MOTS) with a single network using the same model parameters. Due to the fragmented definitions of the object tracking problem itself, most existing trackers are developed to address a single or part of tasks and overspecialize on the characteristics of specific tasks. By contrast, Unicorn provides a unified solution, adopting the same input, backbone, embedding, and head across all tracking tasks. For the first time, we accomplish the great unification of the tracking network architecture and learning paradigm.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/Unicorn_tracking.png" alt="Framework"/> 
 
 - Transformer Tracking with Cyclic Shifting Window Attention. [[paper]](https://arxiv.org/abs/2205.03806) [[code]](https://github.com/skyesong38/cswintt)
-  - Zikai Song, Junqing Yu, Yi-Ping Phoebe Chen, Wei Yang. *CVPR 2022*
+  - Zikai Song, Junqing Yu, Yi-Ping Phoebe Chen, Wei Yang. `CVPR 2022`
   - Keyword: Pixel-to-pixel Attention; Visual Object Tracking; Transformer.
   - <details><summary>Digest</summary> Existing transformer-based approaches adopt the pixel-to-pixel attention strategy on flattened image features and unavoidably ignore the integrity of objects. In this paper, we propose a new transformer architecture with multi-scale cyclic shifting window attention for visual object tracking, elevating the attention from pixel to window level. The cross-window multi-scale attention has the advantage of aggregating attention at different scales and generates the best fine-scale match for the target object. Furthermore, the cyclic shifting strategy brings greater accuracy by expanding the window samples with positional information, and at the same time saves huge amounts of computational power by removing redundant calculations.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/CSwinTT.png" alt="Framework"/> 
 
 - SparseTT: Visual Tracking with Sparse Transformers. [[paper]](https://arxiv.org/abs/2205.03776) [[code]](https://github.com/fzh0917/sparsett)
-  - Zhihong Fu, Zehua Fu, Qingjie Liu, Wenrui Cai, Yunhong Wang. *IJCAI 2022*
+  - Zhihong Fu, Zehua Fu, Qingjie Liu, Wenrui Cai, Yunhong Wang. `IJCAI 2022`
   - Keyword: Sparse Attention; Transfomer.
   - <details><summary>Digest</summary> Self-attention lacks focusing on the most relevant information in the search regions, making it easy to be distracted by background. In this paper, we relieve this issue with a sparse attention mechanism by focusing the most relevant information in the search regions, which enables a much accurate tracking. Furthermore, we introduce a double-head predictor to boost the accuracy of foreground-background classification and regression of target bounding boxes, which further improve the tracking performance.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SparseTT.png" alt="Framework"/> 
 
 - Efficient Visual Tracking via Hierarchical Cross-Attention Transformer. [[paper]](https://arxiv.org/abs/2203.13537) [[code]](https://github.com/chenxin-dlut/hcat)
-  - Xin Chen, Dong Wang, Dongdong Li, Huchuan Lu.
+  - Xin Chen, Dong Wang, Dongdong Li, Huchuan Lu. `Arxiv 2022/03`
   - Keyword: Efficiency; Transfomer; UAV Tracking.
   - <details><summary>Digest</summary> This development is mainly attributed to powerful networks (such as transformers) and additional modules (such as online update and refinement modules). However, less attention has been paid to tracking speed. Most state-of-the-art trackers are satisfied with the real-time speed on powerful GPUs. However, practical applications necessitate higher requirements for tracking speed, especially when edge platforms with limited resources are used. In this work, we present an efficient tracking method via a hierarchical cross-attention transformer named HCAT. Our model runs about 195 fps on GPU, 45 fps on CPU, and 55 fps on the edge AI platform of NVidia Jetson AGX Xavier.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/hierarchical_transformer_tracking.png" alt="Framework"/> 
 
 - Joint Feature Learning and Relation Modeling for Tracking: A One-Stream Framework. [[paper]](https://arxiv.org/abs/2203.11991) [[code]](https://github.com/botaoye/ostrack)
-  - Botao Ye, Hong Chang, Bingpeng Ma, Shiguang Shan. *ECCV 2022*
+  - Botao Ye, Hong Chang, Bingpeng Ma, Shiguang Shan. `ECCV 2022`
   - Keyword: One-stream; Target-background Discriminability.
   - <details><summary>Digest</summary> The current popular two-stream, two-stage tracking framework extracts the template and the search region features separately and then performs relation modeling, thus the extracted features lack the awareness of the target and have limited target-background discriminability. We propose a novel one-stream tracking (OSTrack) framework that unifies feature learning and relation modeling by bridging the template-search image pairs with bidirectional information flows. In this way, discriminative target-oriented features can be dynamically extracted by mutual guidance. Since no extra heavy relation modeling module is needed and the implementation is highly parallelized, the proposed tracker runs at a fast speed. To further improve the inference efficiency, an in-network candidate early elimination module is proposed based on the strong similarity prior calculated in the one-stream framework.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/OSTrack.png" alt="Framework"/> 
 
 - Robust Visual Tracking by Segmentation. [[paper]](https://arxiv.org/abs/2203.11191) [[code]](https://github.com/visionml/pytracking)
-  - Matthieu Paul, Martin Danelljan, Christoph Mayer, Luc Van Gool. *ECCV 2022*
+  - Matthieu Paul, Martin Danelljan, Christoph Mayer, Luc Van Gool. `ECCV 2022`
   - Keyword: Segmentation-centric Tracking; Target Representation.
   - <details><summary>Digest</summary> Estimating the target extent poses a fundamental challenge in visual object tracking. Typically, trackers are box-centric and fully rely on a bounding box to define the target in the scene. In practice, objects often have complex shapes and are not aligned with the image axis. In these cases, bounding boxes do not provide an accurate description of the target and often contain a majority of background pixels. We propose a segmentation-centric tracking pipeline that not only produces a highly accurate segmentation mask, but also internally works with segmentation masks instead of bounding boxes. Thus, our tracker is able to better learn a target representation that clearly differentiates the target in the scene from background content. In order to achieve the necessary robustness for the challenging tracking scenario, we propose a separate instance localization component that is used to condition the segmentation decoder when producing the output mask.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/Robust_by_segmentation.png" alt="Framework"/> 
 
 - MixFormer: End-to-End Tracking with Iterative Mixed Attention. [[paper]](https://arxiv.org/abs/2203.11082) [[code]](https://github.com/MCG-NJU/MixFormer)
-  - Yutao Cui, Cheng Jiang, Limin Wang, Gangshan Wu. *CVPR 2022 Oral*
+  - Yutao Cui, Cheng Jiang, Limin Wang, Gangshan Wu. `CVPR 2022 Oral`
   - Keyword: Transformer; Mixed Attention Module.
   - <details><summary>Digest</summary> To simplify the tracking pipeline and unify the process of feature extraction and target information integration, we present a compact tracking framework, termed as MixFormer, built upon transformers. Our core design is to utilize the flexibility of attention operations, and propose a Mixed Attention Module (MAM) for simultaneous feature extraction and target information integration. This synchronous modeling scheme allows to extract target-specific discriminative features and perform extensive communication between target and search area. Based on MAM, we build our MixFormer tracking framework simply by stacking multiple MAMs with progressive patch embedding and placing a localization head on top. In addition, to handle multiple target templates during online tracking, we devise an asymmetric attention scheme in MAM to reduce computational cost, and propose an effective score prediction module to select high-quality templates.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/Mixformer.png" alt="Framework"/> 
 
 - WebUAV-3M: A Benchmark for Unveiling the Power of Million-Scale Deep UAV Tracking. [[paper]](https://arxiv.org/abs/2201.07425) [[code]](https://github.com/983632847/WebUAV-3M)
-  - Chunhui Zhang, Guanjie Huang, Li Liu, Shan Huang, Yinan Yang, Xiang Wan, Shiming Ge, Dacheng Tao.
+  - Chunhui Zhang, Guanjie Huang, Li Liu, Shan Huang, Yinan Yang, Xiang Wan, Shiming Ge, Dacheng Tao. `Arxiv 2022/01`
   - Keyword: Dataset; Benchmark; UAV Tracking.
   - <details><summary>Digest</summary> In this work, we propose WebUAV-3M, the largest public UAV tracking benchmark to date, to facilitate both the development and evaluation of deep UAV trackers. WebUAV-3M contains over 3.3 million frames across 4,500 videos and offers 223 highly diverse target categories. Each video is densely annotated with bounding boxes by an efficient and scalable semiautomatic target annotation (SATA) pipeline. Importantly, to take advantage of the complementary superiority of language and audio, we enrich WebUAV-3M by innovatively providing both natural language specifications and audio descriptions. We believe that such additions will greatly boost future research in terms of exploring language features and audio cues for multimodal UAV tracking. In addition, a fine-grained UAV tracking-under-scenario constraint (UTUSC) evaluation protocol and seven challenging scenario subtest sets are constructed to enable the community to develop, adapt and evaluate various types of advanced trackers. We provide extensive evaluations and detailed analyses of 43 representative trackers and envision future research directions in the field of deep UAV tracking and beyond.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/WebUAV-3M.png" alt="Framework"/> 
 
 ### RGB Tracking 2021
 - High-Performance Discriminative Tracking with Transformers. [[paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Yu_High-Performance_Discriminative_Tracking_With_Transformers_ICCV_2021_paper.pdf)
-  - Bin Yu, Ming Tang, Linyu Zheng, Guibo Zhu, Jinqiao Wang, Hao Feng, Xuetao Feng, Hanqing Lu. *ICCV 2021*
+  - Bin Yu, Ming Tang, Linyu Zheng, Guibo Zhu, Jinqiao Wang, Hao Feng, Xuetao Feng, Hanqing Lu. `ICCV 2021`
   - Keyword: Discriminative tracker; Transformer.
   - <details><summary>Digest</summary> In this paper, we present DTT, a novel single-object discriminative tracker, based on an encoder-decoder Transformer architecture. By self- and encoder-decoder attention mechanisms, our approach is able to exploit the rich scene information in an end-to-end manner, effectively removing the need for hand-designed discriminative models. In online tracking, given a new test frame, dense prediction is performed at all spatial positions. Not only location, but also bounding box of the target object is obtained in a robust fashion, streamlining the discriminative tracking pipeline.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/DTT.png" alt="Framework"/> 
 
 - FEAR: Fast, Efficient, Accurate and Robust Visual Tracker. [[paper]](https://arxiv.org/abs/2112.07957) [[code]](https://github.com/pinatafarms/feartracker)
-  - Vasyl Borsuk, Roman Vei, Orest Kupyn, Tetiana Martyniuk, Igor Krashenyi, Jiři Matas. *ECCV 2022*
+  - Vasyl Borsuk, Roman Vei, Orest Kupyn, Tetiana Martyniuk, Igor Krashenyi, Jiři Matas. `ECCV 2022`
   - Keyword: Model Efficiency; Pixel-wise block.
   - <details><summary>Digest</summary> We present FEAR, a family of fast, efficient, accurate, and robust Siamese visual trackers. We present a novel and efficient way to benefit from dual-template representation for object model adaption, which incorporates temporal information with only a single learnable parameter. We further improve the tracker architecture with a pixel-wise fusion block. Employed with the lightweight backbone, the optimized version FEAR-XS offers more than 10 times faster tracking than current Siamese trackers while maintaining near state-of-the-art results. FEAR-XS tracker is 2.4x smaller and 4.3x faster than LightTrack with superior accuracy. In addition, we expand the definition of the model efficiency by introducing FEAR benchmark that assesses energy consumption and execution speed.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/FEAR_tracking.png" alt="Framework"/> 
 
 - Learning to Track Objects from Unlabeled Videos. [[paper]](https://arxiv.org/abs/2108.12711) [[code]](https://github.com/vision-sjtu/usot)
-  - Jilai Zheng, Chao Ma, Houwen Peng, Xiaokang Yang. *ICCV 2021*
+  - Jilai Zheng, Chao Ma, Houwen Peng, Xiaokang Yang. `ICCV 2021`
   - Keyword: Unsupervised learning; Siamese network.
   - <details><summary>Digest</summary> In this paper, we propose to learn an Unsupervised Single Object Tracker (USOT) from scratch. We identify that three major challenges, i.e., moving object discovery, rich temporal variation exploitation, and online update, are the central causes of the performance bottleneck of existing unsupervised trackers. To narrow the gap between unsupervised trackers and supervised counterparts, we propose an effective unsupervised learning approach composed of three stages. First, we sample sequentially moving objects with unsupervised optical flow and dynamic programming, instead of random cropping. Second, we train a naive Siamese tracker from scratch using single-frame pairs. Third, we continue training the tracker with a novel cycle memory learning scheme, which is conducted in longer temporal spans and also enables our tracker to update online.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/USOT.png" alt="Framework"/> 
 
 - HiFT: Hierarchical Feature Transformer for Aerial Tracking. [[paper]](https://arxiv.org/abs/2108.00202) [[code]](https://github.com/vision4robotics/HiFT)
-  - Ziang Cao, Changhong Fu, Junjie Ye, Bowen Li, Yiming Li. *ICCV 2021*
+  - Ziang Cao, Changhong Fu, Junjie Ye, Bowen Li, Yiming Li. `ICCV 2021`
   - Keyword: Aerial Tracking; UAV Tracking; Transformer.
   - <details><summary>Digest</summary> In this work, we propose an efficient and effective hierarchical feature transformer (HiFT) for aerial tracking. Hierarchical similarity maps generated by multi-level convolutional layers are fed into the feature transformer to achieve the interactive fusion of spatial (shallow layers) and semantics cues (deep layers). Consequently, not only the global contextual information can be raised, facilitating the target search, but also our end-to-end architecture with the transformer can efficiently learn the interdependencies among multi-level features, thereby discovering a tracking-tailored feature space with strong discriminability.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/HiFT.png" alt="Framework"/> 
 
 - Learning Spatio-Temporal Transformer for Visual Tracking. [[paper]](https://arxiv.org/abs/2103.17154) [[code]](https://github.com/researchmm/Stark)
-  - Bin Yan, Houwen Peng, Jianlong Fu, Dong Wang, Huchuan Lu. *ICCV 2021*
+  - Bin Yan, Houwen Peng, Jianlong Fu, Dong Wang, Huchuan Lu. `ICCV 2021`
   - Keyword: Spatio-Temporal; Transformer; Corner prediction.
   - <details><summary>Digest</summary> In this paper, we present a new tracking architecture with an encoder-decoder transformer as the key component. The encoder models the global spatio-temporal feature dependencies between target objects and search regions, while the decoder learns a query embedding to predict the spatial positions of the target objects. Our method casts object tracking as a direct bounding box prediction problem, without using any proposals or predefined anchors. With the encoder-decoder transformer, the prediction of objects just uses a simple fully-convolutional network, which estimates the corners of objects directly. The whole method is end-to-end, does not need any postprocessing steps such as cosine window and bounding box smoothing, thus largely simplifying existing tracking pipelines.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/STARK.png" alt="Framework"/> 
 
 - Transformer Tracking. [[paper]](https://arxiv.org/abs/2103.15436) [[code]](https://github.com/chenxin-dlut/TransT)
-  - Xin Chen, Bin Yan, Jiawen Zhu, Dong Wang, Xiaoyun Yang, Huchuan Lu. *CVPR 2021*
+  - Xin Chen, Bin Yan, Jiawen Zhu, Dong Wang, Xiaoyun Yang, Huchuan Lu. `CVPR 2021`
   - Keyword: Attention-based Feature Fusion; Transformer; Siamese-like.
   - <details><summary>Digest</summary> The correlation operation is a simple fusion manner to consider the similarity between the template and the search region. However, the correlation operation itself is a local linear matching process, leading to lose semantic information and fall into local optimum easily, which may be the bottleneck of designing high-accuracy tracking algorithms. To address this issue, this work presents a novel attention-based feature fusion network, which effectively combines the template and search region features solely using attention. Specifically, the proposed method includes an ego-context augment module based on self-attention and a cross-feature augment module based on cross-attention. Finally, we present a Transformer tracking (named TransT) method based on the Siamese-like feature extraction backbone, the designed attention-based fusion mechanism, and the classification and regression head.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/TransT.png" alt="Framework"/> 
 
 - Transformer Meets Tracker: Exploiting Temporal Context for Robust Visual Tracking. [[Paper]](https://arxiv.org/abs/2103.11681) [[Code]](https://github.com/594422814/TransformerTrack)
-  - Ning Wang, Wengang Zhou, Jie Wang, Houqaing Li. *CVPR 2021 Oral*
+  - Ning Wang, Wengang Zhou, Jie Wang, Houqaing Li. `CVPR 2021 Oral`
   - Keyword: Temporal Context; Transformer; Siamese-like.
   - <details><summary>Digest</summary> In this work, we bridge the individual video frames and explore the temporal contexts across them via a transformer architecture for robust object tracking. Different from classic usage of the transformer in natural language processing tasks, we separate its encoder and decoder into two parallel branches and carefully design them within the Siamese-like tracking pipelines. The transformer encoder promotes the target templates via attention-based feature reinforcement, which benefits the high-quality tracking model generation. The transformer decoder propagates the tracking cues from previous templates to the current frame, which facilitates the object searching process. Our transformer-assisted tracking framework is neat and trained in an end-to-end manner. With the proposed transformer, a simple Siamese matching approach is able to outperform the current top-performing trackers.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/TransformerMeetsTracker.png" alt="Framework"/> 
@@ -166,34 +166,34 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
 ## **Point Clouds Tracking**
 ### Point Clouds Tracking 2022
 - 3D Siamese Transformer Network for Single Object Tracking on Point Clouds. [[paper]](https://arxiv.org/abs/2207.11995) [[code]](https://github.com/fpthink/STNet)
-  - Le Hui, Lingpeng Wang, Linghua Tang, Kaihao Lan, Jin Xie, Jian Yang. *ECCV 2022*
+  - Le Hui, Lingpeng Wang, Linghua Tang, Kaihao Lan, Jin Xie, Jian Yang. `ECCV 2022`
   - Keyword: 3D SOT; Point Clouds; Siamese-like; Transformer.
   - <details><summary>Digest</summary> In this paper, we explicitly use Transformer to form a 3D Siamese Transformer network for learning robust cross correlation between the template and the search area of point clouds. Specifically, we develop a Siamese point Transformer network to learn shape context information of the target. Its encoder uses self-attention to capture non-local information of point clouds to characterize the shape information of the object, and the decoder utilizes cross-attention to upsample discriminative point features. After that, we develop an iterative coarse-to-fine correlation network to learn the robust cross correlation between the template and the search area. It formulates the cross-feature augmentation to associate the template with the potential target in the search area via cross attention.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/STNet.png" alt="Framework"/> 
 
 - Beyond 3D Siamese Tracking: A Motion-Centric Paradigm for 3D Single Object Tracking in Point Clouds. [[paper]](https://arxiv.org/abs/2203.01730) [[code]](https://github.com/ghostish/open3dsot)
-  - Chaoda Zheng, Xu Yan, Haiming Zhang, Baoyuan Wang, Shenghui Cheng, Shuguang Cui, Zhen Li. *CVPR 2022 Oral*
+  - Chaoda Zheng, Xu Yan, Haiming Zhang, Baoyuan Wang, Shenghui Cheng, Shuguang Cui, Zhen Li. `CVPR 2022 Oral`
   - Keyword: 3D SOT; Point Clouds; Motion-centric.
   - <details><summary>Digest</summary> LiDAR point clouds are usually textureless and incomplete, which hinders effective appearance matching. Besides, previous methods greatly overlook the critical motion clues among targets. In this work, beyond 3D Siamese tracking, we introduce a motion-centric paradigm to handle 3D SOT from a new perspective. Following this paradigm, we propose a matching-free two-stage tracker M^2-Track. At the 1^st-stage, M^2-Track localizes the target within successive frames via motion transformation. Then it refines the target box through motion-assisted shape completion at the 2^nd-stage.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/Motion-centric_3D.png" alt="Framework"/> 
 
 ### Point Clouds Tracking 2021
 - Box-Aware Feature Enhancement for Single Object Tracking on Point Clouds. [[paper]](https://arxiv.org/abs/2108.04728) [[code]](https://github.com/ghostish/open3dsot)
-  - Chaoda Zheng, Xu Yan, Jiantao Gao, Weibing Zhao, Wei Zhang, Zhen Li, Shuguang Cui. *ICCV 2021*
+  - Chaoda Zheng, Xu Yan, Jiantao Gao, Weibing Zhao, Wei Zhang, Zhen Li, Shuguang Cui. `ICCV 2021`
   - Keyword: 3D SOT; Point Clouds; Box-aware Feature Enhancement.
   - <details><summary>Digest</summary> Due to the common occlusion in LiDAR scans, it is non-trivial to conduct accurate feature comparisons on severe sparse and incomplete shapes. In this work, we exploit the ground truth bounding box given in the first frame as a strong cue to enhance the feature description of the target object, enabling a more accurate feature comparison in a simple yet effective way. In particular, we first propose the BoxCloud, an informative and robust representation, to depict an object using the point-to-box relation. We further design an efficient box-aware feature fusion module, which leverages the aforementioned BoxCloud for reliable feature matching and embedding. Integrating the proposed general components into an existing model P2B, we construct a superior box-aware tracker (BAT).
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/BAT.png" alt="Framework"/> 
 
 ### Point Clouds Tracking 2020
 - P2B: Point-to-Box Network for 3D Object Tracking in Point Clouds. [[paper]](https://arxiv.org/abs/2005.13888) [[code]](https://github.com/HaozheQi/P2B)
-  - Haozhe Qi, Chen Feng, Zhiguo Cao, Feng Zhao, Yang Xiao. *CVPR 2020 Oral*
+  - Haozhe Qi, Chen Feng, Zhiguo Cao, Feng Zhao, Yang Xiao. `CVPR 2020 Oral`
   - Keyword: 3D SOT; Point Clouds; Point-to-box.
   - <details><summary>Digest</summary> A novel point-to-box network termed P2B is proposed in an end-to-end learning manner. Our main idea is to first localize potential target centers in 3D search area embedded with target information. Then point-driven 3D target proposal and verification are executed jointly. In this way, the time-consuming 3D exhaustive search can be avoided. Specifically, we first sample seeds from the point clouds in template and search area respectively. Then, we execute permutation-invariant feature augmentation to embed target clues from template into search area seeds and represent them with target-specific features. Consequently, the augmented search area seeds regress the potential target centers via Hough voting. The centers are further strengthened with seed-wise targetness scores. Finally, each center clusters its neighbors to leverage the ensemble power for joint 3D target proposal and verification.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/P2B.png" alt="Framework"/> 
 
 ### Point Clouds Tracking 2019
 - Leveraging Shape Completion for 3D Siamese Tracking. [[paper]](https://arxiv.org/abs/1903.01784) [[code]](https://github.com/SilvioGiancola/ShapeCompletion3DTracking)
-  - Silvio Giancola, Jesus Zarzar, Bernard Ghanem. *CVPR 2019*
+  - Silvio Giancola, Jesus Zarzar, Bernard Ghanem. `CVPR 2019`
   - Keyword: 3D SOT; Point Clouds; Shape Completion; Siamese-like.
   - <details><summary>Digest</summary> In this paper, we investigate the versatility of Shape Completion for 3D Object Tracking in LIDAR point clouds. We design a Siamese tracker that encodes model and candidate shapes into a compact latent representation. We regularize the encoding by enforcing the latent representation to decode into an object model shape. We observe that 3D object tracking and 3D shape completion complement each other. Learning a more meaningful latent representation shows better discriminatory capabilities, leading to improved tracking performance.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SC3D.png" alt="Framework"/> 
