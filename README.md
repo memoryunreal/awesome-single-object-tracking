@@ -33,6 +33,7 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
 ## Review papers
   * **Survey**: Know Your Surroundings: Exploiting Scene Information for Object Tracking. In _arxiv_ 2020. [[Paper]](https://arxiv.org/abs/2003.11014)
 
+<span class="__dimensions_badge_embed__" data-doi="10.1007/978-3-030-01246-5_19"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
 ## **RGB Tracking**
 ### RGB Tracking 2022
