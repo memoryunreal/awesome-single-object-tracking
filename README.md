@@ -32,8 +32,10 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
 - [Other Resources:sparkles:](#other-resources)
 - [Contributing:wink:](#contributing) -->
 ## Review papers
-  * **Survey**: Know Your Surroundings: Exploiting Scene Information for Object Tracking. In _arxiv_ 2020. [[Paper]](https://arxiv.org/abs/2003.11014)
-+
+  * Single Object Tracking Research: A Survey. `Chinese Journal of Computers 2022`. [[Paper]](https://arxiv.org/abs/2204.11410)
+  
+  * Know Your Surroundings: Exploiting Scene Information for Object Tracking. `Arxiv 2020/03`. [[Paper]](https://arxiv.org/abs/2003.11014)
+
 
 ## **RGB Tracking**
 ### RGB Tracking 2022
@@ -201,12 +203,19 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SC3D.png" alt="Framework"/> 
 
 ## **Multi-modal Tracking**
-### RGB-D Tracking
+### RGB-Depth Tracking
 - RGBD1K: A Large-scale Dataset and Benchmark for RGB-D Object Tracking. [[paper]](https://arxiv.org/abs/2208.09787)
   - Xue-Feng Zhu, Tianyang Xu, Zhangyong Tang, Zucheng Wu, Haodong Liu, Xiao Yang, Xiao-Jun Wu, Josef Kittler. `Arxiv 2022/08`
   - Keyword: Large-scal RGB-D Dataset. ![](https://img.shields.io/badge/-Benchmark_&_Dataset-blue) ![](https://img.shields.io/badge/-Transformer-red?style=plat-square)
   - <details><summary>Digest</summary> To address the dataset deficiency issue, a new RGB-D dataset named RGBD1K is released in this paper. The RGBD1K contains 1,050 sequences with about 2.5M frames in total. To demonstrate the benefits of training on a larger RGB-D data set in general, and RGBD1K in particular, we develop a transformer-based RGB-D tracker, named SPT, as a baseline for future visual object tracking studies using the new dataset.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SPT.png" alt="Framework"/> 
+
+### RGB-Thermal Tracking
+- Visible-Thermal UAV Tracking: A Large-Scale Benchmark and New Baseline. [[paper]](https://arxiv.org/abs/2204.04120) [[code]](https://zhang-pengyu.github.io/DUT-VTUAV/)
+  - Pengyu Zhang, Jie Zhao, Dong Wang, Huchuan Lu, Xiang Ruan. `CVPR 2022`
+  - Keyword: Large-scal RGB-T Dataset. ![](https://img.shields.io/badge/-Benchmark_&_Dataset-blue)
+  - <details><summary>Digest</summary> In this paper, we construct a large-scale benchmark with high diversity for visible-thermal UAV tracking (VTUAV), including 500 sequences with 1.7 million high-resolution (1920 × 1080 pixels) frame pairs. In addition, comprehensive applications (short-term tracking, long-term tracking and segmentation mask prediction) with diverse categories and scenes are considered for exhaustive evaluation. Moreover, we provide a coarse-to-fine attribute annotation, where frame-level attributes are provided to exploit the potential of challenge-specific trackers. In addition, we design a new RGB-T baseline, named Hierarchical Multi-modal Fusion Tracker (HMFT), which fuses RGB-T data in various levels.
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/VTUAV.png" alt="Framework"/> 
 
   ### **Siamese**
   - [**2021**](#2021)
