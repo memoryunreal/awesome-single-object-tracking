@@ -21,6 +21,7 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   - [Review](#review-papers)
   - [RGB Tracking](#rgb-tracking)
   - [Point Clouds Tracking](#point-clouds-tracking)
+  - [Multi-modal Tracking](#multi-modal-tracking)
 
 <!-- - [Related Awesome Lists:astonished:](#related-awesome-lists)
 - [Toolboxes:toolbox:](#toolboxes)
@@ -32,7 +33,7 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
 - [Contributing:wink:](#contributing) -->
 ## Review papers
   * **Survey**: Know Your Surroundings: Exploiting Scene Information for Object Tracking. In _arxiv_ 2020. [[Paper]](https://arxiv.org/abs/2003.11014)
-
++
 
 ## **RGB Tracking**
 ### RGB Tracking 2022
@@ -199,6 +200,13 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   - <details><summary>Digest</summary> In this paper, we investigate the versatility of Shape Completion for 3D Object Tracking in LIDAR point clouds. We design a Siamese tracker that encodes model and candidate shapes into a compact latent representation. We regularize the encoding by enforcing the latent representation to decode into an object model shape. We observe that 3D object tracking and 3D shape completion complement each other. Learning a more meaningful latent representation shows better discriminatory capabilities, leading to improved tracking performance.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SC3D.png" alt="Framework"/> 
 
+## **Multi-modal Tracking**
+### RGB-D Tracking
+- RGBD1K: A Large-scale Dataset and Benchmark for RGB-D Object Tracking. [[paper]](https://arxiv.org/abs/2208.09787)
+  - Xue-Feng Zhu, Tianyang Xu, Zhangyong Tang, Zucheng Wu, Haodong Liu, Xiao Yang, Xiao-Jun Wu, Josef Kittler. `Arxiv 2022/08`
+  - Keyword: Large-scal RGB-D Dataset. ![](https://img.shields.io/badge/-Benchmark_&_Dataset-blue) ![](https://img.shields.io/badge/-Transformer-red?style=plat-square)
+  - <details><summary>Digest</summary> To address the dataset deficiency issue, a new RGB-D dataset named RGBD1K is released in this paper. The RGBD1K contains 1,050 sequences with about 2.5M frames in total. To demonstrate the benefits of training on a larger RGB-D data set in general, and RGBD1K in particular, we develop a transformer-based RGB-D tracker, named SPT, as a baseline for future visual object tracking studies using the new dataset.
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SPT.png" alt="Framework"/> 
 
   ### **Siamese**
   - [**2021**](#2021)
