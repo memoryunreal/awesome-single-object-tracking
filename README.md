@@ -169,6 +169,12 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
 
 ## **Point Clouds Tracking**
 ### Point Clouds Tracking 2022
+- Exploring Point-BEV Fusion for 3D Point Cloud Object Tracking with Transformer. [[paper]](https://arxiv.org/abs/2208.05216) [[code]](https://github.com/jasonkks/pttr)
+  - Zhipeng Luo, Changqing Zhou, Liang Pan, Gongjie Zhang, Tianrui Liu, Yueru Luo, Haiyu Zhao, Ziwei Liu, Shijian Lu. `Arxiv 2022/08`
+  - Keyword: 3D SOT; Bird's-Eye View. ![](https://img.shields.io/badge/-Transformer-red?style=plat-square)
+  - <details><summary>Digest</summary> PTTR consists of three novel designs. 1) Instead of random sampling, we design Relation-Aware Sampling to preserve relevant points to the given template during subsampling. 2) We propose a Point Relation Transformer for effective feature aggregation and feature matching between the template and search region. 3) Based on the coarse tracking results, we employ a novel Prediction Refinement Module to obtain the final refined prediction through local feature pooling. In addition, motivated by the favorable properties of the Bird's-Eye View (BEV) of point clouds in capturing object motion, we further design a more advanced framework named PTTR++, which incorporates both the point-wise view and BEV representation to exploit their complementary effect in generating high-quality tracking results.
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/PTTR.png" alt="Framework"/> 
+
 - 3D Siamese Transformer Network for Single Object Tracking on Point Clouds. [[paper]](https://arxiv.org/abs/2207.11995) [[code]](https://github.com/fpthink/STNet)
   - Le Hui, Lingpeng Wang, Linghua Tang, Kaihao Lan, Jin Xie, Jian Yang. `ECCV 2022`
   - Keyword: 3D SOT; Point Clouds; Siamese-like. ![](https://img.shields.io/badge/-Transformer-red?style=plat-square)
