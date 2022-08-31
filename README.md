@@ -20,6 +20,7 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
 - [Awesome Single Object Tracking:](#awesome-single-object-tracking)
   - [Review](#review-papers)
   - [RGB Tracking](#rgb-tracking)
+  - [Robust Tracking](#)
   - [Point Clouds Tracking](#point-clouds-tracking)
   - [Multi-modal Tracking](#multi-modal-tracking)
 
@@ -166,6 +167,14 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   - Keyword: Temporal Context; Siamese-like. ![](https://img.shields.io/badge/-Transformer-red?style=plat-square)
   - <details><summary>Digest</summary> In this work, we bridge the individual video frames and explore the temporal contexts across them via a transformer architecture for robust object tracking. Different from classic usage of the transformer in natural language processing tasks, we separate its encoder and decoder into two parallel branches and carefully design them within the Siamese-like tracking pipelines. The transformer encoder promotes the target templates via attention-based feature reinforcement, which benefits the high-quality tracking model generation. The transformer decoder propagates the tracking cues from previous templates to the current frame, which facilitates the object searching process. Our transformer-assisted tracking framework is neat and trained in an end-to-end manner. With the proposed transformer, a simple Siamese matching approach is able to outperform the current top-performing trackers.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/TransformerMeetsTracker.png" alt="Framework"/> 
+
+## **Robust Tracking**
+### Robust Tracking 2022
+- DIMBA: Discretely Masked Black-Box Attack in Single Object Tracking. [[paper]](https://arxiv.org/abs/2208.05216) [[code]](https://github.com/jasonkks/pttr)
+  - Xiangyu Yin, Wenjie Ruan, Jonathan Fieldsend. `Arxiv 2022/08`
+  - Keyword: Black-Box Attack;  Reinforcement Learning.
+  - <details><summary>Digest</summary> Despite extensive studies focusing on the robustness of image, audio, and NLP, works on adversarial examples of visual object tracking -- especially in a black-box manner -- are quite lacking. In this paper, we propose a novel adversarial attack method to generate noises for single object tracking under black-box settings, where perturbations are merely added on initial frames of tracking sequences, which is difficult to be noticed from the perspective of a whole video clip. Specifically, we divide our algorithm into three components and exploit reinforcement learning for localizing important frame patches precisely while reducing unnecessary computational queries overhead. Compared to existing techniques, our method requires fewer queries on initialized frames of a video to manipulate competitive or even better attack performance.
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/DIMBA.png" alt="Framework"/> 
 
 ## **Point Clouds Tracking**
 ### Point Clouds Tracking 2022
