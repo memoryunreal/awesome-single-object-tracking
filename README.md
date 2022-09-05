@@ -170,11 +170,17 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
 
 ## **Robust Tracking**
 ### Robust Tracking 2022
-- DIMBA: Discretely Masked Black-Box Attack in Single Object Tracking. [[paper]](https://arxiv.org/abs/2208.05216) [[code]](https://github.com/jasonkks/pttr)
+- DIMBA: Discretely Masked Black-Box Attack in Single Object Tracking. [[paper]](https://arxiv.org/abs/2207.08044)
   - Xiangyu Yin, Wenjie Ruan, Jonathan Fieldsend. `Arxiv 2022/08`
   - Keyword: Black-Box Attack;  Reinforcement Learning.
   - <details><summary>Digest</summary> Despite extensive studies focusing on the robustness of image, audio, and NLP, works on adversarial examples of visual object tracking -- especially in a black-box manner -- are quite lacking. In this paper, we propose a novel adversarial attack method to generate noises for single object tracking under black-box settings, where perturbations are merely added on initial frames of tracking sequences, which is difficult to be noticed from the perspective of a whole video clip. Specifically, we divide our algorithm into three components and exploit reinforcement learning for localizing important frame patches precisely while reducing unnecessary computational queries overhead. Compared to existing techniques, our method requires fewer queries on initialized frames of a video to manipulate competitive or even better attack performance.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/DIMBA.png" alt="Framework"/> 
+
+- Few-Shot Backdoor Attacks on Visual Object Tracking. [[paper]](https://arxiv.org/abs/2201.13178) [[code]](https://github.com/hxzhong1997/fsba)
+  - Yiming Li, Haoxiang Zhong, Xingjun Ma, Yong Jiang, Shu-Tao Xia. `Arxiv 2022/08`
+  - Keyword: Backdoor Attack;  Few-shot Learning.
+  - <details><summary>Digest</summary> We reveal such a threat where an adversary can easily implant hidden backdoors into VOT models by tempering with the training process. Specifically, we propose a simple yet effective few-shot backdoor attack (FSBA) that optimizes two losses alternately: 1) a <i>feature loss</i> defined in the hidden feature space, and 2) the standard <i>tracking loss</i>. We show that, once the backdoor is embedded into the target model by our FSBA, it can trick the model to lose track of specific objects even when the <i>trigger</i> only appears in one or a few frames. We examine our attack in both digital and physical-world settings and show that it can significantly degrade the performance of state-of-the-art VOT trackers. We also show that our attack is resistant to potential defenses, highlighting the vulnerability of VOT models to potential backdoor attacks.
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/FSBA.png" alt="Framework"/> 
 
 ## **Point Clouds Tracking**
 ### Point Clouds Tracking 2022
