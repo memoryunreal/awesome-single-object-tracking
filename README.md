@@ -243,6 +243,14 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SC3D.png" alt="Framework"/> 
 
 ## **Multi-modal Tracking**
+
+### Vision-Language Tracking
+- Divert More Attention to Vision-Language Tracking. [[paper]](https://arxiv.org/abs/2207.01076) [[code]](https://github.com/JudasDie/SOTS)
+  - Mingzhe Guo, Zhipeng Zhang, Heng Fan, Liping Jing. `Arxiv 2022/07`
+  - Keyword: Make ConvNet Great Again; Modality Mixer.
+  - <details><summary>Digest</summary> In this paper, we demonstrate that the Transformer-reliance is not necessary and the pure ConvNets are still competitive and even better yet more economical and friendly in achieving SOTA tracking. Our solution is to unleash the power of multimodal vision-language (VL) tracking, simply using ConvNets. The essence lies in learning novel unified-adaptive VL representations with our modality mixer (ModaMixer) and asymmetrical ConvNet search. We show that our unified-adaptive VL representation, learned purely with the ConvNets, is a simple yet strong alternative to Transformer visual features, by unbelievably improving a CNN-based Siamese tracker by 14.5% in SUC on challenging LaSOT (50.7% > 65.2%), even outperforming several Transformer-based SOTA trackers. Besides empirical results, we theoretically analyze our approach to evidence its effectiveness. By revealing the potential of VL representation, we expect the community to divert more attention to VL tracking and hope to open more possibilities for future tracking beyond Transformer.
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SOTS.png" alt="Framework"/> 
+  
 ### RGB-Depth Tracking
 - RGBD1K: A Large-scale Dataset and Benchmark for RGB-D Object Tracking. [[paper]](https://arxiv.org/abs/2208.09787)
   - Xue-Feng Zhu, Tianyang Xu, Zhangyong Tang, Zucheng Wu, Haodong Liu, Xiao Yang, Xiao-Jun Wu, Josef Kittler. `Arxiv 2022/08`
