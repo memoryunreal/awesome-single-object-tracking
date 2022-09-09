@@ -189,7 +189,7 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/Ad2Attack.png" alt="Framework"/> 
 
 - Few-Shot Backdoor Attacks on Visual Object Tracking. [[paper]](https://arxiv.org/abs/2201.13178) [[code]](https://github.com/hxzhong1997/fsba)
-  - Yiming Li, Haoxiang Zhong, Xingjun Ma, Yong Jiang, Shu-Tao Xia. `Arxiv 2022/08`
+  - Yiming Li, Haoxiang Zhong, Xingjun Ma, Yong Jiang, Shu-Tao Xia. `ICLR 2022`
   - Keyword: Backdoor Attack;  Few-shot Learning.
   - <details><summary>Digest</summary> We reveal such a threat where an adversary can easily implant hidden backdoors into VOT models by tempering with the training process. Specifically, we propose a simple yet effective few-shot backdoor attack (FSBA) that optimizes two losses alternately: 1) a <i>feature loss</i> defined in the hidden feature space, and 2) the standard <i>tracking loss</i>. We show that, once the backdoor is embedded into the target model by our FSBA, it can trick the model to lose track of specific objects even when the <i>trigger</i> only appears in one or a few frames. We examine our attack in both digital and physical-world settings and show that it can significantly degrade the performance of state-of-the-art VOT trackers. We also show that our attack is resistant to potential defenses, highlighting the vulnerability of VOT models to potential backdoor attacks.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/FSBA.png" alt="Framework"/> 
