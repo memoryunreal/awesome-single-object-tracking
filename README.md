@@ -201,6 +201,13 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   - <details><summary>Digest</summary> We propose a decision-based black-box attack method for visual object tracking. In contrast to existing black-box adversarial attack methods that deal with static images for image classification, we propose IoU attack that sequentially generates perturbations based on the predicted IoU scores from both current and historical frames. By decreasing the IoU scores, the proposed attack method degrades the accuracy of temporal coherent bounding boxes (i.e., object motions) accordingly. In addition, we transfer the learned perturbations to the next few frames to initialize temporal motion attack. We validate the proposed IoU attack on state-of-the-art deep trackers (i.e., detection based, correlation filter based, and long-term trackers).
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/IoUAttack.png" alt="Framework"/> 
 
+### Robust Tracking 2020
+- Efficient Adversarial Attacks for Visual Object Tracking. [[paper]](https://arxiv.org/abs/2008.00217)
+  - Siyuan Liang, Xingxing Wei, Siyuan Yao, Xiaochun Cao. `ECCV 2020`
+  - Keyword: Adversarial Attack;  Efficiency.
+  - <details><summary>Digest</summary> In this paper, we analyze the weakness of object trackers based on the Siamese network and then extend adversarial examples to visual object tracking. We present an end-to-end network FAN (Fast Attack Network) that uses a novel drift loss combined with the embedded feature loss to attack the Siamese network based trackers. Under a single GPU, FAN is efficient in the training speed and has a strong attack performance. The FAN can generate an adversarial example at 10ms, achieve effective targeted attack (at least 40% drop rate on OTB) and untargeted attack (at least 70% drop rate on OTB).
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/FAN.png" alt="Framework"/> 
+
 ## **Point Clouds Tracking**
 ### Point Clouds Tracking 2022
 - Exploring Point-BEV Fusion for 3D Point Cloud Object Tracking with Transformer. [[paper]](https://arxiv.org/abs/2208.05216) [[code]](https://github.com/jasonkks/pttr)
