@@ -73,7 +73,7 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
 
 - AiATrack: Attention in Attention for Transformer Visual Tracking. [[paper]](https://arxiv.org/abs/2207.09603) [[code]](https://github.com/Little-Podi/AiATrack)
   - Shenyuan Gao, Chunluan Zhou, Chao Ma, Xinggang Wang, Junsong Yuan. `ECCV 2022`
-  - Keyword: Single Object Tracking; Atention in Atention. ![](https://img.shields.io/badge/-Transformer-red?style=plat-square)
+  - Keyword: Single Object Tracking; Attention in Attention. ![](https://img.shields.io/badge/-Transformer-red?style=plat-square)
   - <details><summary>Digest</summary> The independent correlation computation in the attention mechanism could result in noisy and ambiguous attention weights, which inhibits further performance improvement. To address this issue, we propose an attention in attention (AiA) module, which enhances appropriate correlations and suppresses erroneous ones by seeking consensus among all correlation vectors. Our AiA module can be readily applied to both self-attention blocks and cross-attention blocks to facilitate feature aggregation and information propagation for visual tracking. Moreover, we propose a streamlined Transformer tracking framework, dubbed AiATrack, by introducing efficient feature reuse and target-background embeddings to make full use of temporal references.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/AiATrack.png" alt="Framework"/> 
 
