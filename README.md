@@ -259,8 +259,14 @@ BTW: Welcome to visit the SUSTech-VIP Lab as research assistants and visiting st
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SOTS.png" alt="Framework"/> 
   
 ### RGB-Depth Tracking
-- RGBD1K: A Large-scale Dataset and Benchmark for RGB-D Object Tracking. [[paper]](https://arxiv.org/abs/2208.09787)
-  - Xue-Feng Zhu, Tianyang Xu, Zhangyong Tang, Zucheng Wu, Haodong Liu, Xiao Yang, Xiao-Jun Wu, Josef Kittler. `Arxiv 2022/08`
+- Visual Prompt Multi-Modal Tracking. [[paper]](https://arxiv.org/abs/2303.10826) [[code]](https://github.com/jiawen-zhu/ViPT)
+  - Jiawen Zhu, Simiao Lai, Xin Chen, Dong Wang, Huchuan Lu. `CVPR 2023`
+  - Keyword: Prompt, Multi-Modal. ![](https://img.shields.io/badge/-Prompt%20Learning-green)
+  - <details><summary>Digest</summary> To inherit the powerful representations of the foundation model, a natural modus operandi for multi-modal tracking is full fine-tuning on the RGB-based parameters. Albeit effective, this manner is not optimal due to the scarcity of downstream data and poor transferability, etc. In this paper, inspired by the recent success of the prompt learning in language models, we develop Visual Prompt multi-modal Tracking (ViPT), which learns the modal-relevant prompts to adapt the frozen pre-trained foundation model to various downstream multimodal tracking tasks. ViPT finds a better way to stimulate the knowledge of the RGB-based model that is pre-trained at scale, meanwhile only introducing a few trainable parameters (less than 1% of model parameters). ViPT outperforms the full fine-tuning paradigm on multiple downstream tracking tasks including RGB+Depth, RGB+Thermal, and RGB+Event tracking.
+  - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/ViPT.png" alt="Framework"/> 
+
+- RGBD1K: A Large-scale Dataset and Benchmark for RGB-D Object Tracking. [[paper]](https://arxiv.org/abs/2208.09787) [[project]](https://github.com/xuefeng-zhu5/RGBD1K)
+  - Xue-Feng Zhu, Tianyang Xu, Zhangyong Tang, Zucheng Wu, Haodong Liu, Xiao Yang, Xiao-Jun Wu, Josef Kittler. `AAAI 2023`
   - Keyword: Large-scal RGB-D Dataset. ![](https://img.shields.io/badge/-Benchmark_&_Dataset-blue) ![](https://img.shields.io/badge/-Transformer-red?style=plat-square)
   - <details><summary>Digest</summary> To address the dataset deficiency issue, a new RGB-D dataset named RGBD1K is released in this paper. The RGBD1K contains 1,050 sequences with about 2.5M frames in total. To demonstrate the benefits of training on a larger RGB-D data set in general, and RGBD1K in particular, we develop a transformer-based RGB-D tracker, named SPT, as a baseline for future visual object tracking studies using the new dataset.
   - <details><summary>Framework</summary> <img src="https://github.com/memoryunreal/awesome-single-object-tracking/blob/main/Figure/SPT.png" alt="Framework"/> 
